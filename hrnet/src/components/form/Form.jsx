@@ -2,14 +2,16 @@ import "components/form/form.css";
 import { departments } from "assets/data/Departments";
 import Dropdown from "components/dropdown/Dropdown";
 import CreateDatePicker from "components/datepicker/Datepicker";
+import EmployeeContext from "context/Context";
 import { INITIAL_STATE_EMPLOYEE } from "utils/Constants";
 import Input from "components/input/Input";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { statesOfUsa } from "assets/data/StatesOfUsa";
 
 const Form = () => {
   const [newEmployee, setNewEmployee] = useState(INITIAL_STATE_EMPLOYEE);
   const [errorMessage, setErrorMessage] = useState("");
+  const context = useContext(EmployeeContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,6 +26,7 @@ const Form = () => {
       return setErrorMessage("Please fill in all fields");
     }
     setErrorMessage("");
+    context.addEmployeeToList(newEmployee, setErrorMessage);
   };
 
   return (
