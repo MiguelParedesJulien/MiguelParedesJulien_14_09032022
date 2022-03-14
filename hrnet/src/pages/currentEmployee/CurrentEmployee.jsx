@@ -1,7 +1,12 @@
 import React from "react";
+import Table from "components/dataTable/DataTable";
 
 function CurrentEmployee() {
-  return <div>Liste des employés</div>;
+  return (
+    <div>
+      <Table />
+    </div>
+  );
 }
 
 export default CurrentEmployee;
