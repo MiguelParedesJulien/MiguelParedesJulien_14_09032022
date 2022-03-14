@@ -1,6 +1,7 @@
 import "components/form/form.css";
 import { departments } from "assets/data/Departments";
 import Dropdown from "components/dropdown/Dropdown";
+import CreateDatePicker from "components/datepicker/Datepicker";
 import { INITIAL_STATE_EMPLOYEE } from "utils/Constants";
 import Input from "components/input/Input";
 import React, { useState } from "react";
@@ -33,7 +34,9 @@ const Form = () => {
         <label htmlFor="lastName">Last Name</label>
         <Input inputType="text" inputName="lastName" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
         <label htmlFor="dateOfBirth">Date of Birth</label>
+        <CreateDatePicker inputName="dateOfBirth" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
         <label htmlFor="startDate">Start Date</label>
+        <CreateDatePicker inputName="startDate" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
         <fieldset className="address">
           <legend>Address</legend>
           <label htmlFor="street">Street</label>
