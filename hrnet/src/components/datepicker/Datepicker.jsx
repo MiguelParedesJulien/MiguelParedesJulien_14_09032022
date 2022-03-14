@@ -1,5 +1,5 @@
 import DatePicker from "react-datepicker";
-import { FaRegHandPointDown } from "react-icons/fa";
+import { FaRegHandPointDown, FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 import { getMonth, getYear } from "date-fns";
 import { MONTHS } from "utils/Constants";
 import PropTypes from "prop-types";
@@ -15,8 +15,8 @@ const CreateDatePicker = (props) => {
       <DatePicker
         renderCustomHeader={({ date, changeMonth, changeYear, decreaseMonth, increaseMonth, prevMonthButtonDisabled, nextMonthButtonDisable }) => (
           <div className="date-picker__header">
-            <button onClick={decreaseMonth} disabled={prevMonthButtonDisabled}>
-              {"<"}
+            <button type="button" onClick={decreaseMonth} disabled={prevMonthButtonDisabled}>
+              <FaChevronCircleLeft />
             </button>
             <select value={MONTHS[getMonth(date)]} onChange={({ target: { value } }) => changeMonth(MONTHS.indexOf(value))}>
               {MONTHS.map((month) => (
@@ -34,8 +34,8 @@ const CreateDatePicker = (props) => {
               ))}
               ;
             </select>
-            <button onClick={increaseMonth} disabled={nextMonthButtonDisable}>
-              {">"}
+            <button type="button" onClick={increaseMonth} disabled={nextMonthButtonDisable}>
+              <FaChevronCircleRight />
             </button>
           </div>
         )}

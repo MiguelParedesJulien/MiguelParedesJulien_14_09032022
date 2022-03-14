@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "components/header/Header";
+import Nav from "components/nav/Nav";
 import GlobalState from "context/GlobalState";
 import React from "react";
 import { routes } from "router/routes";
@@ -9,7 +9,7 @@ const App = () => {
     <GlobalState>
       <Router>
         <div className="router-container">
-          <Header />
+          <Nav />
           <Switch>
             {routes.map((route, i) => (
               <Route key={i} path={route.path} exact={route.exact} component={route.component} />

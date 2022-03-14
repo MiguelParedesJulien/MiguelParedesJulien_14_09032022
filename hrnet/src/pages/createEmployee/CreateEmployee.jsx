@@ -1,12 +1,12 @@
 import React from "react";
 import Form from "components/form/Form";
 
-function CreateEmployee() {
+const CreateEmployee = () => {
   return (
     <main>
       <Form />
     </main>
   );
-}
+};
 
 export default CreateEmployee;
