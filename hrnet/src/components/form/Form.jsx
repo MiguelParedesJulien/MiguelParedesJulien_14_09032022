@@ -31,15 +31,15 @@ const Form = () => {
   };
 
   return (
-    <main className="containerWrapper">
-      <section className="formHeader">
+    <section className="containerWrapper">
+      <article className="formHeader">
         <h2>New Employee</h2>
-      </section>
-      <div className="lineForm" />
+      </article>
+      <span className="lineForm" />
       <form action="#" id="createEmployee" onSubmit={handleSubmit} className="form">
         <fieldset className="fieldSetEmployee">
           <legend>Employee</legend>
-          <div className="formGroup">
+          <article className="formGroup">
             <div className="formGroupItems">
               <label htmlFor="firstName">First Name</label>
               <Input inputType="text" inputName="firstName" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
@@ -48,8 +48,8 @@ const Form = () => {
               <label htmlFor="lastName">Last Name</label>
               <Input inputType="text" inputName="lastName" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
             </div>
-          </div>
-          <div className="formGroup">
+          </article>
+          <article className="formGroup">
             <div className="formGroupItems">
               <label htmlFor="dateOfBirth">Date of Birth</label>
               <CreateDatePicker inputName="dateOfBirth" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
@@ -58,11 +58,11 @@ const Form = () => {
               <label htmlFor="startDate">Start Date</label>
               <CreateDatePicker inputName="startDate" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
             </div>
-          </div>
+          </article>
         </fieldset>
         <fieldset className="fieldSetAddress">
           <legend>Address</legend>
-          <div className="formGroup">
+          <article className="formGroup">
             <div className="formGroupItems">
               <label htmlFor="street">Street</label>
               <Input inputType="text" inputName="street" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
@@ -71,8 +71,8 @@ const Form = () => {
               <label htmlFor="city">City</label>
               <Input inputType="text" inputName="city" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
             </div>
-          </div>
-          <div className="formGroup">
+          </article>
+          <article className="formGroup">
             <div className="formGroupItems">
               <label htmlFor="state">State</label>
               <Dropdown inputName="state" options={statesOfUsa} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
@@ -81,28 +81,28 @@ const Form = () => {
               <label htmlFor="zip-code">Zip Code</label>
               <Input inputType="text" inputName="zipCode" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
             </div>
-          </div>
+          </article>
         </fieldset>
         <fieldset className="fieldSetDepartment">
-          <div className="formGroup">
+          <article className="formGroup">
             <div className="formGroupItems">
               <label htmlFor="department">Department</label>
               <Dropdown inputName="department" options={departments} newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
             </div>
-          </div>
+          </article>
         </fieldset>
         <div className="fieldSetSumbit">
-          <div className="formGroup">
+          <article className="formGroup">
             <div className="formSubmitDiv">
               <button type="submit" className="buttonDefault">
                 Save
               </button>
             </div>
-          </div>
+          </article>
         </div>
         <span className="errorMessage">{errorMessage}</span>
       </form>
-    </main>
+    </section>
   );
 };
 

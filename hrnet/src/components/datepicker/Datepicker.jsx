@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import range from "lodash/range";
 import React, { Fragment } from "react";
 import "react-datepicker/dist/react-datepicker.css";
+import "components/datepicker/datepicker.css";
 
 const CreateDatePicker = (props) => {
   const YEARS = range(1920, getYear(new Date()) + 1, 1);

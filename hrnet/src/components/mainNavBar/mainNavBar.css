@@ -42,12 +42,12 @@
 }
 
 .navBarLogo {
-  height: 2.8125rem;
+  height: 5rem;
   left: 48%;
   position: absolute;
-  top: 0.3125rem;
+  top: -0.8rem;
   transition: 0.3s;
-  width: 2.8125rem;
+  width: 5rem;
 }
 
 .navBarLogo:hover,

@@ -3,6 +3,7 @@ import { dataTableLabels } from "assets/data/DataTableLabels";
 import EmployeeContext from "context/Context";
 import moment from "moment";
 import React, { useContext } from "react";
+import "components/dataTable/dataTable.css";
 
 const Table = () => {
   const context = useContext(EmployeeContext);

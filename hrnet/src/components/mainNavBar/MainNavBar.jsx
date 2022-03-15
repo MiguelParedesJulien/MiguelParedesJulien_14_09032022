@@ -1,7 +1,7 @@
 import "components/mainNavBar/mainNavBar.css";
 import { FaComments, FaCompress, FaBell, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "assets/img/logo/logo_hrnet.jpg";
+import logo from "assets/img/logo/logo_hrnet.png";
 import PropTypes from "prop-types";
 import React from "react";
 

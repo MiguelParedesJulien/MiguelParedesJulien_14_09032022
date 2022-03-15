@@ -1,7 +1,7 @@
 import "components/sideNavBar/sideNavBar.css";
 import { FaUserPlus, FaUsers } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logoDark from "assets/img/logo/logo_hrnet_dark.jpg";
+import logoDark from "assets/img/logo/logo_hrnet.png";
 import PropTypes from "prop-types";
 import React from "react";
 import user from "assets/img/icon/user.webp";
@@ -39,7 +39,7 @@ const SideNavBar = (props) => {
           </ul>
         </nav>
         <section className="sideNavBarFooter">
-          <h2>HRNet © 2021</h2>
+          <h2>HRnet © 2022</h2>
           <p>All right reserved.</p>
           <Link to="/" className="privacyPolicy">
             Privacy Policy

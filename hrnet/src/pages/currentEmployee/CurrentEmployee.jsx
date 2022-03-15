@@ -3,9 +3,13 @@ import Table from "components/dataTable/DataTable";
 
 const CurrentEmployee = () => {
   return (
-    <div>
+    <section className="containerWrapper">
+      <article className="formHeader">
+        <h2>Current Employee</h2>
+      </article>
+      <span className="lineForm" />
       <Table />
-    </div>
+    </section>
   );
 };
 

@@ -8,14 +8,12 @@ const App = () => {
   return (
     <GlobalState>
       <Router>
-        <div className="router-container">
-          <Nav />
-          <Switch>
-            {routes.map((route, i) => (
-              <Route key={i} path={route.path} exact={route.exact} component={route.component} />
-            ))}
-          </Switch>
-        </div>
+        <Nav />
+        <Switch>
+          {routes.map((route, i) => (
+            <Route key={i} path={route.path} exact={route.exact} component={route.component} />
+          ))}
+        </Switch>
       </Router>
     </GlobalState>
   );
