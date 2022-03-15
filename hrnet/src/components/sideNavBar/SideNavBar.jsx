@@ -22,6 +22,7 @@ const SideNavBar = (props) => {
               <h3>V</h3>
             </Link>
           </article>
+          <br />
           <ul className="sideBarNav" role="menu">
             <li className="sideBarNavItem">
               <Link to="./" className="sideBarNavLink">
@@ -29,6 +30,7 @@ const SideNavBar = (props) => {
                 <p>New Employee</p>
               </Link>
             </li>
+            <br />
             <div className="line" />
             <li className="sideBarNavItem">
               <Link to="/employee-list" className="sideBarNavLink">

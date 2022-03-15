@@ -33,12 +33,12 @@ const Form = () => {
   return (
     <section className="containerWrapper">
       <article className="formHeader">
-        <h2>New Employee</h2>
+        <h2>NEW EMPLOYEE</h2>
       </article>
       <span className="lineForm" />
       <form action="#" id="createEmployee" onSubmit={handleSubmit} className="form">
         <fieldset className="fieldSetEmployee">
-          <legend>Employee</legend>
+          <legend>EMPLOYEE</legend>
           <article className="formGroup">
             <div className="formGroupItems">
               <label htmlFor="firstName">First Name</label>
@@ -61,7 +61,7 @@ const Form = () => {
           </article>
         </fieldset>
         <fieldset className="fieldSetAddress">
-          <legend>Address</legend>
+          <legend>ADDRESS</legend>
           <article className="formGroup">
             <div className="formGroupItems">
               <label htmlFor="street">Street</label>
@@ -79,7 +79,7 @@ const Form = () => {
             </div>
             <div className="formGroupItems">
               <label htmlFor="zip-code">Zip Code</label>
-              <Input inputType="text" inputName="zipCode" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
+              <Input inputType="number" inputName="zipCode" newEmployee={newEmployee} setNewEmployee={setNewEmployee} />
             </div>
           </article>
         </fieldset>
