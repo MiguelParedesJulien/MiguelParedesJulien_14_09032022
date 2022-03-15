@@ -1,5 +1,4 @@
 import "components/sideNavBar/sideNavBar.css";
-import { FaUserPlus, FaUsers } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logoDark from "assets/img/logo/logo_hrnet.png";
 import PropTypes from "prop-types";
@@ -26,7 +25,7 @@ const SideNavBar = (props) => {
           <ul className="sideBarNav" role="menu">
             <li className="sideBarNavItem">
               <Link to="./" className="sideBarNavLink">
-                <FaUserPlus />
+                <i className="fas fa-user-plus"></i>
                 <p>New Employee</p>
               </Link>
             </li>
@@ -34,7 +33,7 @@ const SideNavBar = (props) => {
             <div className="line" />
             <li className="sideBarNavItem">
               <Link to="/employee-list" className="sideBarNavLink">
-                <FaUsers />
+                <i className="fas fa-users"></i>
                 <p>Employees List</p>
               </Link>
             </li>

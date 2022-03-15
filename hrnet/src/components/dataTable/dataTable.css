@@ -5,21 +5,22 @@
 }
 
 .dtb {
-  background-color: #edebe8;
-  border: solid 0.5rem #d4b89f;
+  background-color: #dcf2ee;
+  border: solid 0.5rem #2f4858;
   border-radius: 1.5625rem;
   margin-top: 2rem;
   padding: 1rem;
 }
 
 .dtb select {
-  background-color: #c49589;
+  background-color: #3b8e83;
   border-radius: 0.625rem;
   color: #f5f7fa;
   height: 3.125rem;
   margin: 0 0.5rem;
   opacity: 0.8;
   width: 6.25rem;
+  font-weight: 600;
 }
 
 .dtb-entries {
@@ -27,11 +28,24 @@
 }
 
 .dtb-pagination-btn {
-  background-color: #c49589 !important;
+  background-color: #2f4858 !important;
   border-color: #f5f7fa !important;
   border-radius: 0.3125rem;
-  color: #f5f4f2 !important;
+  color: #ffff !important;
   margin: 1rem 0.5rem;
+  font-weight: 600;
+}
+
+.dtb-table-arrow-down {
+  border-top: 5px solid #2f4858;
+}
+
+.dtb-table-arrow-up {
+  border-bottom: 5px solid #2f4858;
+}
+
+.dtb-table-row-nomatch {
+  font-weight: 600;
 }
 
 .dtb-search {
@@ -40,7 +54,7 @@
 }
 
 .dtb-search input {
-  background-color: #c49589;
+  background-color: #3b8e83;
   border-radius: 0.625rem;
   border-style: none;
   color: #f5f7fa;
@@ -57,6 +71,7 @@
 
 .dtb-showing {
   margin-top: 2rem !important;
+  font-weight: 600;
 }
 
 .dtb-table {

@@ -3,7 +3,7 @@
 }
 
 .react-datepicker__day--selected {
-  background-color: #c49589 !important;
+  background-color: #1c6e7d !important;
 }
 
 .react-datepicker__day-name {
@@ -19,12 +19,12 @@
 }
 
 .react-datepicker__header {
-  background-color: #c49589 !important;
+  background-color: #1c6e7d !important;
   font-weight: 600 !important;
 }
 
 .react-datepicker__header button {
-  background-color: #d4b89f;
+  background-color: #039590;
   border: none;
   border-radius: 0.3125rem;
   margin: 1rem;
@@ -34,6 +34,11 @@
 
 .react-datepicker__header select {
   background-color: #edebe8 !important;
+}
+
+.react-datepicker__today-button {
+  background-color: #1c6e7d;
+  border-top: 1px solid #2f4858;
 }
 
 @media (min-width: 991px) {
