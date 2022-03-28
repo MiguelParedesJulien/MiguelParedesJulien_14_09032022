@@ -6,12 +6,15 @@ import EmployeeContext from "context/Context";
 import { INITIAL_STATE_EMPLOYEE } from "utils/Constants";
 import Input from "components/input/Input";
 import React, { useState, useContext } from "react";
+import { Modal, useModal } from "modal-top";
+import { Link } from "react-router-dom";
 import { statesOfUsa } from "assets/data/StatesOfUsa";
 
 const Form = () => {
   const [newEmployee, setNewEmployee] = useState(INITIAL_STATE_EMPLOYEE);
   const [errorMessage, setErrorMessage] = useState("");
   const context = useContext(EmployeeContext);
+  const { showModal, activeModal, handleOpenModal, handleCloseModal } = useModal();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,6 +28,7 @@ const Form = () => {
     ) {
       return setErrorMessage("Please fill in all fields");
     }
+    handleOpenModal("submitModal");
     setErrorMessage("");
     context.addEmployeeToList(newEmployee, setErrorMessage);
     setNewEmployee(INITIAL_STATE_EMPLOYEE);
@@ -98,6 +102,15 @@ const Form = () => {
               <button type="submit" className="buttonDefault">
                 Save
               </button>
+              <Modal isOpen={showModal && activeModal === "submitModal"} close={handleCloseModal} addCloseEscape={true}>
+                <br />
+                <h3>The employee has been registered !</h3>
+                <Link to="/employee-list" className="buttonLink">
+                  <button type="button" className="buttonDefault">
+                    Go to the list
+                  </button>
+                </Link>
+              </Modal>
             </div>
           </article>
         </div>
