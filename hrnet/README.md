@@ -40,4 +40,4 @@
 
 ## Auteur
 
-- [Miguel Paredes Julien](https://github.com/MiguelParedesJulien
+- [Miguel Paredes Julien](https://github.com/MiguelParedesJulien)
