@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Pass a jQuery library to React : [HRNet Demo](https://hrnet-react-demo.netlify.app)
 
-## Available Scripts
+## Prerequisites for install
 
-In the project directory, you can run:
+- You need [Git](https://git-scm.com) to clone the repository
+- You need [Node](https://nodejs.org/en/) (v16.10.0) to run the npm commands
 
-### `npm start`
+## Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [React](https://reactjs.org): v17.0.2
+- [datatables-plugin-react](https://www.npmjs.com/package/datatables-plugin-react): v1.8.1
+- [date-fns](https://www.npmjs.com/package/date-fns): v2.28.0
+- [lodash](https://www.npmjs.com/package/lodash): v4.17.21
+- [moment](https://www.npmjs.com/package/moment): v2.29.1
+- [prop-types](https://www.npmjs.com/package/prop-types): v15.8.1
+- [react-datepicker](https://www.npmjs.com/package/react-datepicker): v4.3.0
+- [react-dom](https://www.npmjs.com/package/react-dom): v17.0.2
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom): v5.3.0
+- [react-scripts](https://www.npmjs.com/package/react-scripts): v5.0.0
+- [react-select](https://www.npmjs.com/package/react-select): v5.1.0
+- [react-top-modal](https://www.npmjs.com/package/modal-top): v0.1.7
+- Recommended text editor: [Visual Studio Code](https://code.visualstudio.com)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installing and launching Front-End
 
-### `npm test`
+1. Clone the repository of HRNet:  
+   `$ git clone https://github.com/MiguelParedesJulien/MiguelParedesJulien_14_09032022`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Open folder hrnet
 
-### `npm run build`
+3. Inside this front-end repository, install dependencies:  
+   `$ npm install`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Launch front-end on port 3000:  
+   `$ npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Front-end is now rendered at URL `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Auteur
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Miguel Paredes Julien](https://github.com/MiguelParedesJulien
