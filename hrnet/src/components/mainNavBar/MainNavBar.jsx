@@ -4,6 +4,11 @@ import logo from "assets/img/logo/logo_hrnet.png";
 import PropTypes from "prop-types";
 import React from "react";
 
+/**
+ * React main navigation component of the site, it includes an icon to open the side menu, the website logo as well as notification icons
+ * @param {func} toggle - Allows you to open the side menu on click
+ * @return {void}
+ */
 const MainNavBar = (props) => {
   return (
     <header className="header">

@@ -5,6 +5,10 @@ import moment from "moment";
 import React, { useContext } from "react";
 import "components/dataTable/dataTable.css";
 
+/**
+ * Data-Table component calling on the data included in the EmployeeContext
+ * @return {void}
+ */
 const Table = () => {
   const context = useContext(EmployeeContext);
   let employees = context.list.employeeList || [];

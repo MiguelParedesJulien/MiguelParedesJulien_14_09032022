@@ -1,6 +1,11 @@
 import { statesOfUsa } from "assets/data/StatesOfUsa";
 import { departments } from "assets/data/Departments";
 
+/**
+ * Create all the parts of the state and methods that will be accessible from any component of the website
+ * @param {object} children
+ * @return {void}
+ */
 const INITIAL_STATE_EMPLOYEE = {
   firstName: "",
   lastName: "",
